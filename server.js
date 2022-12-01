@@ -16,6 +16,6 @@ app.get('/api/data', (req, res) => {
 
 
 //
-app.listen(3001, (rec, res) =>{
+app.listen(3001, (req, res) =>{
     console.log(`API now on port ${PORT}!`);
 });
