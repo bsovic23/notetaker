@@ -1,4 +1,4 @@
-const data = require('./db/db.json');
+const notes = require('./db/db.json');
 
 const express = require('express');
 const app = express();
@@ -10,7 +10,7 @@ const app = express();
 
 // routes
 app.get('/api/data', (req, res) => {
-    res.send('hello!');
+    res.json(notes);
 });
 
 
